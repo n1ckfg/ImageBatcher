@@ -1,0 +1,11 @@
+Example Int Setting
+1
+
+Example Float Setting
+1.0
+
+Example String Setting
+foo
+
+Example Boolean Setting
+true

@@ -84,7 +84,6 @@ void openAppFolderHandler(){
       print("Trying OS X Finder method.");
       //open(sketchPath(openFilePath));
       Desktop.getDesktop().open(new File(sketchPath("") + "/" + openFilePath));
-      //open(sketchPath("ManosOsc.app/Contents/Resources/Java/" + openFilePath));
     }catch(Exception e){ }
   }else{
     try{

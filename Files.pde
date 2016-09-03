@@ -10,7 +10,7 @@ String fileName = "frame";
 boolean filesLoaded = false;
 PImage img;
 PGraphics targetImg;
-boolean updateScreen = false;
+boolean updateScreen = true;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~
 //choose folder dialog, Processing 2 version

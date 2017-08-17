@@ -5,17 +5,16 @@ class Settings {
   String exampleString = "";
   boolean exampleBoolean = false;
         
-  Data settings;
+  String[] data;
 
   Settings(String _s) {
     try {
-      settings = new Data();
-      settings.load(_s);
-      for (int i=0;i<settings.data.length;i++) {
-        if (settings.data[i].equals("Example Int Setting")) exampleInt = setInt(settings.data[i+1]);
-        if (settings.data[i].equals("Example Float Setting")) exampleFloat = setFloat(settings.data[i+1]);
-        if (settings.data[i].equals("Example String Setting")) exampleString = setString(settings.data[i+1]);
-        if (settings.data[i].equals("Example Boolean Setting")) exampleBoolean = setBoolean(settings.data[i+1]);
+      data = loadStrings(_s);
+      for (int i=0;i<data.length;i++) {
+        if (data[i].equals("Example Int Setting")) exampleInt = setInt(data[i+1]);
+        if (data[i].equals("Example Float Setting")) exampleFloat = setFloat(data[i+1]);
+        if (data[i].equals("Example String Setting")) exampleString = setString(data[i+1]);
+        if (data[i].equals("Example Boolean Setting")) exampleBoolean = setBoolean(data[i+1]);
       }
     } 
     catch(Exception e) {

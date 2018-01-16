@@ -141,7 +141,7 @@ float tween(float v1, float v2, float e) {
 }
 
 void prepGraphics() {
-  targetImg = createGraphics(img.width, img.height, JAVA2D);
+  targetImg = createGraphics(img.width, img.height, P2D);
 }
 
 void fileSetup() {

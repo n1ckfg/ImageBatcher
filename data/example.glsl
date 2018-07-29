@@ -6,7 +6,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 	vec2 uv = fragCoord.xy / iResolution.xy;
 
 	vec4 col = texture2D(texture, uv);
-	col.y = 0;
+	col.y = 1.0 - col.y;
 
 	fragColor = col;
 }

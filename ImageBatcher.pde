@@ -8,8 +8,9 @@ void draw() {
   fileFirstRun();
   
   targetImg.beginDraw();
-  targetImg.image(exampleProcess(img),0,0);
-  targetImg.filter(shader);
+  //targetImg.image(exampleProcess(img),0,0); // CPU effect
+  targetImg.image(img,0,0);
+  targetImg.filter(shader); // GPU effect
   targetImg.endDraw();
   
   fileLoop();

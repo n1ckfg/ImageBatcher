@@ -1,5 +1,5 @@
 PShader shader; 
-PImage rgbImg, depthImg;
+//PImage rgbImg, depthImg;
 
 PVector shaderMousePos = new PVector(0,0);
 PVector shaderMouseClick = new PVector(0,0);
@@ -12,7 +12,7 @@ void setupShaders() {
 void updateShaders() {
   //shaderSetMouse(shader);
   //shaderSetTime(shader);
-  //shaderSetTexture(shader, "tex0", rgbImg);
+  shaderSetTexture(shader, "tex0", img);
 }
 
 void drawShaders() {
